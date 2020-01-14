@@ -1,0 +1,7 @@
+<h1>Add a new question:</h1>
+
+<%= form_for [@survey, @question] do |f| %>
+  <%= f.label :question_text %>
+  <%= f.text_field :question_text %>
+  <p><%= f.submit %></p>
+<% end %>
